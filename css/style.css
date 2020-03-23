@@ -55,3 +55,42 @@ body {
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg .tg-baqh{text-align:center;vertical-align:top}
 .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+
+.tgnb {border-collapse: collapse;}
+
+.corpdep{
+   font-family: Verdana;
+   font-size: 12px;
+   color: black;
+   text-align:justify;
+}
+
+.forma{
+	background: #231550 ;  /*#B73A28;*/
+	padding: 5px 5px 5px 5px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	-moz-border-radius: 9px 3px 9px 3px;
+	-webkit-border-radius: 3px;
+	-webkit-border-top-left-radius: 9px;
+	-webkit-border-bottom-right-radius: 9px;
+	
+}
+
+.forma DIV {
+	font-family: verdana;	
+	font-size: 10pt;
+	font-weight: 200;
+	color: black;
+	background: aliceblue;
+        padding: 5px 5px 5px 5px;
+	
+	
+ }
+
+.textalbastru {
+   font-family: Verdana, Helvetica;
+   font-size: 10px;
+   color: blue;
+}
