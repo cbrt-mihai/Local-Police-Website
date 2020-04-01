@@ -10,7 +10,6 @@ body {
     text-align: center;
     margin: auto;
     width: 75%;
-    border: 5px dotted black; /* de scos border-ul dupa ce e gata tot */
     padding: 10px;
 }
 
@@ -93,4 +92,31 @@ body {
    font-family: Verdana, Helvetica;
    font-size: 10px;
    color: blue;
+}
+
+#ofiteri>section{
+	border: 1px solid green;
+	padding:2px;
+	min-width:100px;
+	flex-basis:0;/* coloane de lg egale */
+	flex-grow:2; /* idem */
+	min-width: 300px;
+}
+#asistenti>section{
+	border: 1px solid green;
+	padding:2px;
+	min-width:100px;
+	flex-basis:0;/* coloane de lg egale */
+	flex-grow:2; /* idem */
+	min-width: 300px;
+}
+div#ofiteri{
+    border-top: 3px inset #BBB;
+    display: flex;
+    flex-wrap: wrap;
+}
+div#asistenti{
+    border-top: 3px inset #BBB;
+    display: flex;
+    flex-wrap: wrap;
 }
