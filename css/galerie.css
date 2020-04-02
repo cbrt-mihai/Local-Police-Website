@@ -1,0 +1,23 @@
+#galerie-statica{
+  grid-area:gr-g-stat;
+}
+
+#gr {
+ display:grid;
+ grid-template-columns: repeat(3,1fr);
+ grid-template-rows: auto;
+ grid-row-gap:0.5em;
+ grid-column-gap:0.5em;
+}
+
+#gr img{
+  width: 100%;
+}
+
+#gr figcaption{
+  text-align:center;
+}
+
+#gr figure{
+  transition: all 1s linear;
+}

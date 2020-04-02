@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-	<title> News | Departamentul de Politie Sector 13 </title>
+	<title> Ponturi | Departamentul de Politie Sector 13 </title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Site-ul oficial al departamentului de politie din sector 13">
-	<meta name="keywords" content="politie, infractori">
+	<meta name="keywords" content="noutati, anunturi">
 	<meta name="author" content="Burta Mihai - Catalin">
 	
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
@@ -16,9 +16,9 @@
 	<header>
         <div class="container">   
             <nav id="top">
-                <a href="index.html" class="dropbtn">Acasa</a> |
+                <button class="dropbtn" onclick="location.href='index.html'" type="button">Acasa</button> |
                 <div class="dropdown">
-                  <a href="cazInc.html" class="dropbtn"><button class="dropbtn">Cazuri incheiate</button></a>
+                  <button class="dropbtn" onclick="location.href='cazInc.html'" type="button">Cazuri Incheiate</button>
                   <div class="dropdown-content">
                     <a href="cazInc.html#crima">Crima</a>
                     <a href="cazInc.html#furt">Furt</a>
@@ -26,15 +26,15 @@
                   </div>
                 </div> |
                 <div class="dropdown">
-                    <a href="departament.html" class="dropbtn"><button class="dropbtn">Departament</button></a>
+                  <button class="dropbtn" onclick="location.href='departament.html'" type="button">Departament</button>
                   <div class="dropdown-content">
                     <a href="departament.html#capitan">Capitan</a>
                     <a href="departament.html#ofiteri">Ofiteri</a>
                     <a href="departament.html#asistenti">Asistenti</a>
                   </div>
                 </div> |
-                <a href="news.html" class="dropbtn">Anunturi</a> |
-                <a href="contact.html" class="dropbtn">Contact</a>
+                <button class="dropbtn" onclick="location.href='news.html'" type="button">Ponturi</button> |
+                <button class="dropbtn" onclick="location.href='contact.html'" type="button">Contact</button>
             </nav>
         </div>
 	</header>
@@ -43,18 +43,20 @@
         <!-- de adaugat noutati aici -->
         <div class="container">
             <!-- De inserat aici continut -->
+            <!-- Vreau sa adaug un formular aici -->
+            <p> PAGE IN PROGRESS </p>
             
-            <p> PAGE IN PROGESS </p>
         </div>
-	   
+    </main>
 	<footer>
         <div class="container">
             <address>
                 <p> <b> Program: </b> </p>
-                <p>Luni-Vineri: <time>8:00</time>-<time>21:00</time> <br>
-                Sambata-Duminica: <time>10:00</time>-<time>16:00</time></p>
+                <p>Luni-Vineri: 8:00-21:00 <br>
+                Sambata-Duminica: 10:00-16:00</p>
             
                 <p>Adresa: Strada Mihai Eminescu, nr. 11, sector 13.</p>
+                <a href="mailto:dps13buc@statulroman.ro">Trimite-ne un mail.</a> <br><br>
             </address>	
             
             <a href="#top">Sus</a>

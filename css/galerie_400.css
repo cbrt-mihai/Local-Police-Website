@@ -1,0 +1,18 @@
+#galerie-statica{
+  grid-area:gr-g-stat;
+}
+
+#gr {
+  display:block;  
+}
+
+#gr img{
+  width: 100%;
+}
+#gr figcaption{
+  text-align:center;
+}
+
+#gr figure{
+  transition: all 1s linear;
+}

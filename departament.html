@@ -4,7 +4,7 @@
 	<title> Departament | Departamentul de Politie Sector 13 </title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Site-ul oficial al departamentului de politie din sector 13">
-	<meta name="keywords" content="politie, infractori">
+	<meta name="keywords" content="capitan, ofiteri, asistenti, departament">
 	<meta name="author" content="Burta Mihai - Catalin">
 	
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
@@ -16,9 +16,9 @@
 	<header>
         <div class="container">   
             <nav id="top">
-                <a href="index.html" class="dropbtn">Acasa</a> |
+                <button class="dropbtn" onclick="location.href='index.html'" type="button">Acasa</button> |
                 <div class="dropdown">
-                  <a href="cazInc.html" class="dropbtn"><button class="dropbtn">Cazuri incheiate</button></a>
+                  <button class="dropbtn" onclick="location.href='cazInc.html'" type="button">Cazuri Incheiate</button>
                   <div class="dropdown-content">
                     <a href="cazInc.html#crima">Crima</a>
                     <a href="cazInc.html#furt">Furt</a>
@@ -26,15 +26,15 @@
                   </div>
                 </div> |
                 <div class="dropdown">
-                    <a href="departament.html" class="dropbtn"><button class="dropbtn">Departament</button></a>
+                  <button class="dropbtn" onclick="location.href='departament.html'" type="button">Departament</button>
                   <div class="dropdown-content">
                     <a href="departament.html#capitan">Capitan</a>
                     <a href="departament.html#ofiteri">Ofiteri</a>
                     <a href="departament.html#asistenti">Asistenti</a>
                   </div>
                 </div> |
-                <a href="news.html" class="dropbtn">Anunturi</a> |
-                <a href="contact.html" class="dropbtn">Contact</a>
+                <button class="dropbtn" onclick="location.href='news.html'" type="button">Ponturi</button> |
+                <button class="dropbtn" onclick="location.href='contact.html'" type="button">Contact</button>
             </nav>
         </div>
 	</header>
@@ -43,10 +43,15 @@
         <div id="capitan">
 				<section>
                     <div class="forma">
-                        Emilian - Capitan
+                        Emilian Popescu - Capitan
                         <div class="corpdep"> 
-                            <div align="center"><img src="images/emilian.jpg" height="250px"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique turpis et mi efficitur varius. Ut sodales mauris sem, id suscipit nisl pellentesque ac. Suspendisse et massa quis sem interdum ultricies. Aenean ornare ultricies urna in viverra. Sed non blandit mi. Ut sit amet vulputate libero. Integer consectetur lacinia purus et pharetra. Fusce sit amet orci sed velit sollicitudin posuere. Aliquam erat volutpat. Pellentesque vel velit et ex tristique mattis. Aenean pulvinar et est ut rutrum. Vestibulum euismod turpis sit amet ligula convallis, ut pulvinar nisi egestas.</p>
+                            <div align="center"><img src="images/emilian.jpg" id="emi" title="Capitan Emilian"></div>
+                            <p> Emilian Popescu a absolvit <em>Facultatea de Științe Politice și Administrație Publică a Universității Babeș-Bolyai din Cluj</em> în anul 1997, ulterior dobândind titlul științific de doctor în științe politice în cadrul <em>Școlii Naționale de Studii Politice și Administrative din București (2009).</em></p>
+
+                            <p> Și-a consolidat profilul academic în domeniul studiilor de securitate, urmând cursurile <em>Colegiului Național de Apărare al Universității Naționale de Apărare „Carol I“ (2005-2006)</em> și <em>Programul pe probleme de terorism şi studii de securitate (PTSS)</em> organizat de <em>Centrul European de Studii de Securitate „George C. Marshall“</em> din Garmisch-Partenkirchen, Germania (2006).</p>
+                            
+                            
+                            <div align="center"><i>Motto: </i><q>Patria a Priori</q></div>
                         </div>
                     </div>
 				</section>
@@ -55,28 +60,34 @@
         <div id="ofiteri">
             <section>
 				<div class="forma">
-                    Doru - Ofiter
+                    Doru Agache - Ofiter
                     <div class="corpdep">
-                        <div align="center"><img src="images/doru.jpg" width="260" height="260" align="center"></div> 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique turpis et mi efficitur varius. Ut sodales mauris sem, id suscipit nisl pellentesque ac. Suspendisse et massa quis sem interdum ultricies. Aenean ornare ultricies urna in viverra. Sed non blandit mi. Ut sit amet vulputate libero. Integer consectetur lacinia purus et pharetra. Fusce sit amet orci sed velit sollicitudin posuere. Aliquam erat volutpat. Pellentesque vel velit et ex tristique mattis. Aenean pulvinar et est ut rutrum. Vestibulum euismod turpis sit amet ligula convallis, ut pulvinar nisi egestas.</p>
+                        <div align="center"><img src="images/doru.jpg" width="260" height="260" align="center" title="Ofiter Doru"></div> 
+                        <p>Doru Agache are 47 de ani și o experiență de peste două decenii în munca operativă. De profesie este fizician, absolvent al <em>Facultății de Fizică din cadrul Universității București</em>. A urmat cursurile postuniversitare cu specializarea Geopolitică și Geostrategie din cadrul <em>Academiei de Studii Economice</em>, a absolvit masterul NATO Senior Executive din cadrul SNSPA, a absolvit cursurile seminarului <em>Combaterea Armelor de Distrugere în Masă și Terorismului din cadrul Centrului European pentru Studii de Securitate George C. Marshall</em> din Germania.</p>
                     </div>
                 </div>
             </section>
             <section>
 				<div class="forma">
-                    Remi - Ofiter
+                    Remi Jalba - Ofiter
                     <div class="corpdep">
-                        <div align="center"><img src="images/doru.jpg" width="260" height="260" align="center"></div> 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique turpis et mi efficitur varius. Ut sodales mauris sem, id suscipit nisl pellentesque ac. Suspendisse et massa quis sem interdum ultricies. Aenean ornare ultricies urna in viverra. Sed non blandit mi. Ut sit amet vulputate libero. Integer consectetur lacinia purus et pharetra. Fusce sit amet orci sed velit sollicitudin posuere. Aliquam erat volutpat. Pellentesque vel velit et ex tristique mattis. Aenean pulvinar et est ut rutrum. Vestibulum euismod turpis sit amet ligula convallis, ut pulvinar nisi egestas.</p>
+                        <div align="center"><img src="images/remi.jpg" width="260" height="260" align="center" title="Ofiter Remi"></div> 
+                        <p>Domnul general de brigadă Remi Jalba, a deținut diferite funcții în <em>Direcția Generală Contraspionaj</em>: locțiitor al șefului Direcției, șef de departamente de analiză, operațiuni și planificare. În această calitate, a participat la operaţiuni derulate în cooperare cu parteneri interni și externi ai DPS13.</p>
+
+                        <p>A coordonat și contribuit la o bună parte din procesele de transformare instituțională.</p>
                     </div>
                 </div>
             </section>
             <section>
 				<div class="forma">
-                    Titus - Ofiter
+                    Titus Antonescu - Ofiter
                     <div class="corpdep">
-                        <div align="center"><img src="images/doru.jpg" width="260" height="260" align="center"></div> 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique turpis et mi efficitur varius. Ut sodales mauris sem, id suscipit nisl pellentesque ac. Suspendisse et massa quis sem interdum ultricies. Aenean ornare ultricies urna in viverra. Sed non blandit mi. Ut sit amet vulputate libero. Integer consectetur lacinia purus et pharetra. Fusce sit amet orci sed velit sollicitudin posuere. Aliquam erat volutpat. Pellentesque vel velit et ex tristique mattis. Aenean pulvinar et est ut rutrum. Vestibulum euismod turpis sit amet ligula convallis, ut pulvinar nisi egestas.</p>
+                        <div align="center"><img src="images/titus.jpg" width="260" height="260" align="center" title="Ofiter Titus"></div> 
+                        <p>Titus Antonescu, anterior numirii, până în anul 2010, a ocupat diverse funcții de conducere în cadrul <em>Direcției Generale Contraspionaj</em>. În perioada 2010-2013, a fost șeful <em>Direcției de Informații a Municipiului București</em>. Între 2013-2016, a condus <em>Direcția Generală Apărarea Constituției</em>.
+
+                        <p>În anul 2015 i-a fost acordat gradul de general de brigadă.</p>
+
+                        <p>A participat la misiuni, acţiuni şi operaţiuni complexe derulate în special pe profil contraspionaj, în cooperare cu parteneri externi ai DPS13.</p>
                     </div>
                 </div>
             </section>
@@ -87,7 +98,7 @@
 				<div class="forma">
                     John Doe - Asistent
                     <div class="corpdep">
-                        <div align="center"><img src="images/doru.jpg" width="260" height="260" align="center"></div> 
+                        <div align="center"><img src="images/johndoe.png" width="260" height="260" align="center"></div> 
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique turpis et mi efficitur varius. Ut sodales mauris sem, id suscipit nisl pellentesque ac. Suspendisse et massa quis sem interdum ultricies. Aenean ornare ultricies urna in viverra. Sed non blandit mi. Ut sit amet vulputate libero. Integer consectetur lacinia purus et pharetra. Fusce sit amet orci sed velit sollicitudin posuere. Aliquam erat volutpat. Pellentesque vel velit et ex tristique mattis. Aenean pulvinar et est ut rutrum. Vestibulum euismod turpis sit amet ligula convallis, ut pulvinar nisi egestas.</p>
                     </div>
                 </div>
@@ -96,7 +107,7 @@
 				<div class="forma">
                     John Doe - Asistent
                     <div class="corpdep">
-                        <div align="center"><img src="images/doru.jpg" width="260" height="260" align="center"></div> 
+                        <div align="center"><img src="images/johndoe.png" width="260" height="260" align="center"></div> 
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique turpis et mi efficitur varius. Ut sodales mauris sem, id suscipit nisl pellentesque ac. Suspendisse et massa quis sem interdum ultricies. Aenean ornare ultricies urna in viverra. Sed non blandit mi. Ut sit amet vulputate libero. Integer consectetur lacinia purus et pharetra. Fusce sit amet orci sed velit sollicitudin posuere. Aliquam erat volutpat. Pellentesque vel velit et ex tristique mattis. Aenean pulvinar et est ut rutrum. Vestibulum euismod turpis sit amet ligula convallis, ut pulvinar nisi egestas.</p>
                     </div>
                 </div>
@@ -105,85 +116,22 @@
 				<div class="forma">
                     John Doe - Asistent
                     <div class="corpdep">
-                        <div align="center"><img src="images/doru.jpg" width="260" height="260" align="center"></div> 
+                        <div align="center"><img src="images/johndoe.png" width="260" height="260" align="center"></div> 
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique turpis et mi efficitur varius. Ut sodales mauris sem, id suscipit nisl pellentesque ac. Suspendisse et massa quis sem interdum ultricies. Aenean ornare ultricies urna in viverra. Sed non blandit mi. Ut sit amet vulputate libero. Integer consectetur lacinia purus et pharetra. Fusce sit amet orci sed velit sollicitudin posuere. Aliquam erat volutpat. Pellentesque vel velit et ex tristique mattis. Aenean pulvinar et est ut rutrum. Vestibulum euismod turpis sit amet ligula convallis, ut pulvinar nisi egestas.</p>
                     </div>
                 </div>
             </section>
         </div>
-        <!--
-        <div class="container">
-            
-            <div id="ofiteri">
-                <H1>Ofiteri</H1>
-                <table width="95%" align="center" cellpadding="5">
-                    <tr>
-                        <td width="25%">
-                             
-                        </td>
-
-                        <td width="25%">
-                             
-                        </td>
-
-                        <td width="25%">
-                             
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            
-            <div id="asistenti">
-                <H1>Asistenti</H1>
-                <table width="95%" align="center" cellpadding="5">
-                    <tr>
-                        <td width="25%">
-                             <div class="forma">
-                                 John Doe
-                                 <div class="corpdep">
-
-                                    <div align="center"><img src="images/pattern.jpg" width="260" height="260" align="center"></div> 
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique turpis et mi efficitur varius. Ut sodales mauris sem, id suscipit nisl pellentesque ac. Suspendisse et massa quis sem interdum ultricies. Aenean ornare ultricies urna in viverra. Sed non blandit mi. Ut sit amet vulputate libero. Integer consectetur lacinia purus et pharetra. Fusce sit amet orci sed velit sollicitudin posuere. Aliquam erat volutpat. Pellentesque vel velit et ex tristique mattis. Aenean pulvinar et est ut rutrum. Vestibulum euismod turpis sit amet ligula convallis, ut pulvinar nisi egestas.</p>
-                                 </div>
-                             </div>
-                        </td>
-
-                        <td width="25%">
-                             <div class="forma">
-                                 John Doe
-                                 <div class="corpdep">
-
-                                    <div align="center"><img src="images/pattern.jpg" width="260" height="260" align="center"></div>  
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique turpis et mi efficitur varius. Ut sodales mauris sem, id suscipit nisl pellentesque ac. Suspendisse et massa quis sem interdum ultricies. Aenean ornare ultricies urna in viverra. Sed non blandit mi. Ut sit amet vulputate libero. Integer consectetur lacinia purus et pharetra. Fusce sit amet orci sed velit sollicitudin posuere. Aliquam erat volutpat. Pellentesque vel velit et ex tristique mattis. Aenean pulvinar et est ut rutrum. Vestibulum euismod turpis sit amet ligula convallis, ut pulvinar nisi egestas.</p>
-                                 </div>
-                             </div>
-                        </td>
-
-                        <td width="25%">
-                             <div class="forma">
-                                 John Doe
-                                 <div class="corpdep">
-
-                                    <div align="center"><img src="images/pattern.jpg" width="260" height="260" align="center"></div>  
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique turpis et mi efficitur varius. Ut sodales mauris sem, id suscipit nisl pellentesque ac. Suspendisse et massa quis sem interdum ultricies. Aenean ornare ultricies urna in viverra. Sed non blandit mi. Ut sit amet vulputate libero. Integer consectetur lacinia purus et pharetra. Fusce sit amet orci sed velit sollicitudin posuere. Aliquam erat volutpat. Pellentesque vel velit et ex tristique mattis. Aenean pulvinar et est ut rutrum. Vestibulum euismod turpis sit amet ligula convallis, ut pulvinar nisi egestas.</p>
-                                 </div>
-                             </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-           
-        </div>
-    -->
     </main>
 	<footer>
         <div class="container">
             <address>
                 <p> <b> Program: </b> </p>
-                <p>Luni-Vineri: <time>8:00</time>-<time>21:00</time> <br>
-                Sambata-Duminica: <time>10:00</time>-<time>16:00</time></p>
+                <p>Luni-Vineri: 8:00-21:00 <br>
+                Sambata-Duminica: 10:00-16:00</p>
             
                 <p>Adresa: Strada Mihai Eminescu, nr. 11, sector 13.</p>
+                <a href="mailto:dps13buc@statulroman.ro">Trimite-ne un mail.</a> <br><br>
             </address>	
             
             <a href="#top">Sus</a>

@@ -1,0 +1,58 @@
+html,body{
+	counter-reset: nrCrim nrFurt nrContr;
+}
+
+table#tabelCrima, table#tabelCrima td, table#tabelCrima th{
+	border: 1px solid black;
+	padding: 1em;
+}
+table#tabelCrima{
+	border-spacing:0;
+	border-collapse:separate;
+	box-sizing:border-box;
+}
+table#tabelCrima>tbody tr {
+	counter-increment: nrCrim; 
+}
+
+table#tabelCrima tfoot td::after{
+	content: " " counter(nrCrim);
+}
+
+/* ----------------------------- */
+
+table#tabelFurt, table#tabelFurt td, table#tabelFurt th{
+	border: 1px solid black;
+	padding: 1em;
+}
+table#tabelFurt{
+	border-spacing:0;
+	border-collapse:separate;
+	box-sizing:border-box;
+}
+table#tabelFurt>tbody tr {
+	counter-increment: nrFurt; 
+}
+
+table#tabelFurt tfoot td::after{
+	content: " " counter(nrFurt);
+}
+
+/* ----------------------------- */
+
+table#tabelContr, table#tabelContr td, table#tabelContr th{
+	border: 1px solid black;
+	padding: 1em;
+}
+table#tabelContr{
+	border-spacing:0;
+	border-collapse:separate;
+	box-sizing:border-box;
+}
+table#tabelContr>tbody tr {
+	counter-increment: nrContr; 
+}
+
+table#tabelContr tfoot td::after{
+	content: " " counter(nrContr);
+}

@@ -1,0 +1,234 @@
+		table#tabelCrima,table#tabelCrima tr{
+			border:none;
+			padding:0;
+			margin:0;
+			display:block;
+		}
+		table#tabelCrima td{
+			display:block;
+			padding:0.2em;
+			box-sizing:border-box; 
+		}
+		table#tabelCrima thead{
+			display:none;
+		}
+		table#tabelCrima tbody td:nth-child(1)::before{
+			content:"id: ";
+		}
+		table#tabelCrima tbody td:nth-child(2)::before{
+			content:"Nume: ";
+		}
+		table#tabelCrima tbody td:nth-child(3)::before{
+			content:"Varsta: ";
+		}
+		table#tabelCrima tbody td:nth-child(4)::before{
+			content:"Fapta: ";
+		}
+		table#tabelCrima tbody td:nth-child(5)::before{
+			content:"Sentinta: ";
+		}
+		table#tabelCrima tbody td:nth-child(6)::before{
+			content:"nr. Crime: ";
+			
+		}
+        table#tabelCrima tbody td:nth-child(7)::before{
+			content:"Locatie crime: ";
+			
+		}
+        table#tabelCrima tbody td:nth-child(8)::before{
+			content:"Adresa: ";
+			
+		}
+        table#tabelCrima tbody td:nth-child(9)::before{
+			content:"nr. Telefon: ";
+			
+		}
+        table#tabelCrima tbody td:nth-child(10)::before{
+			content:"CNP: ";
+			
+		}
+		
+		table#tabelCrima td{
+			border-bottom:none;
+			border-top:none;
+			float:left;
+			width:80%;
+			padding-left:2%;
+			padding-right:2%;
+		}
+		table#tabelCrima td::before{
+			float:left;
+			width:35%;
+			background:#00AAFF;
+			font-weight:bold;
+			margin-right:0.5em;
+			padding:0.1em;
+			line-height:100%;
+		}
+		table#tabelCrima td:last-child{
+			border-bottom:1px dashed grey;
+		}
+		table#tabelCrima tr:first-child  td:first-child{
+			border-top:1px solid black;
+		}
+		table#tabelCrima tr:last-child td:last-child{
+			border-bottom:1px solid black;
+		}
+
+/* -------------------------------- */
+
+		table#tabelFurt,table#tabelFurt tr{
+			border:none;
+			padding:0;
+			margin:0;
+			display:block;
+		}
+		table#tabelFurt td{
+			display:block;
+			padding:0.2em;
+			box-sizing:border-box; 
+		}
+		table#tabelFurt thead{
+			display:none;
+		}
+		table#tabelFurt tbody td:nth-child(1)::before{
+			content:"id: ";
+		}
+		table#tabelFurt tbody td:nth-child(2)::before{
+			content:"Nume: ";
+		}
+		table#tabelFurt tbody td:nth-child(3)::before{
+			content:"Varsta: ";
+		}
+		table#tabelFurt tbody td:nth-child(4)::before{
+			content:"Fapta: ";
+		}
+		table#tabelFurt tbody td:nth-child(5)::before{
+			content:"Sentinta: ";
+		}
+		table#tabelFurt tbody td:nth-child(6)::before{
+			content:"nr. Furturi: ";
+			
+		}
+        table#tabelFurt tbody td:nth-child(7)::before{
+			content:"Locatie furt: ";
+			
+		}
+        table#tabelFurt tbody td:nth-child(8)::before{
+			content:"Adresa: ";
+			
+		}
+        table#tabelFurt tbody td:nth-child(9)::before{
+			content:"nr. Telefon: ";
+			
+		}
+        table#tabelFurt tbody td:nth-child(10)::before{
+			content:"CNP: ";
+			
+		}
+		
+		table#tabelFurt td{
+			border-bottom:none;
+			border-top:none;
+			float:left;
+			width:80%;
+			padding-left:2%;
+			padding-right:2%;
+		}
+		table#tabelFurt td::before{
+			float:left;
+			width:35%;
+			background:#00AAFF;
+			font-weight:bold;
+			margin-right:0.5em;
+			padding:0.1em;
+			line-height:100%;
+		}
+		table#tabelFurt td:last-child{
+			border-bottom:1px dashed grey;
+		}
+		table#tabelFurt tr:first-child  td:first-child{
+			border-top:1px solid black;
+		}
+		table#tabelFurt tr:last-child td:last-child{
+			border-bottom:1px solid black;
+		}
+
+/* -------------------------------- */
+
+		table#tabelContr,table#tabelContr tr{
+			border:none;
+			padding:0;
+			margin:0;
+			display:block;
+		}
+		table#tabelContr td{
+			display:block;
+			padding:0.2em;
+			box-sizing:border-box; 
+		}
+		table#tabelContr thead{
+			display:none;
+		}
+		table#tabelContr tbody td:nth-child(1)::before{
+			content:"id: ";
+		}
+		table#tabelContr tbody td:nth-child(2)::before{
+			content:"Nume: ";
+		}
+		table#tabelContr tbody td:nth-child(3)::before{
+			content:"Varsta: ";
+		}
+		table#tabelContr tbody td:nth-child(4)::before{
+			content:"Fapta: ";
+		}
+		table#tabelContr tbody td:nth-child(5)::before{
+			content:"Sentinta: ";
+		}
+		table#tabelContr tbody td:nth-child(6)::before{
+			content:"nr. Contraventii: ";
+			
+		}
+        table#tabelContr tbody td:nth-child(7)::before{
+			content:"Locatie contraventie: ";
+			
+		}
+        table#tabelContr tbody td:nth-child(8)::before{
+			content:"Adresa: ";
+			
+		}
+        table#tabelContr tbody td:nth-child(9)::before{
+			content:"nr. Telefon: ";
+			
+		}
+        table#tabelContr tbody td:nth-child(10)::before{
+			content:"CNP: ";
+			
+		}
+		
+		table#tabelContr td{
+			border-bottom:none;
+			border-top:none;
+			float:left;
+			width:80%;
+			padding-left:2%;
+			padding-right:2%;
+		}
+		table#tabelContr td::before{
+			float:left;
+			width:35%;
+			background:#00AAFF;
+			font-weight:bold;
+			margin-right:0.5em;
+			padding:0.1em;
+			line-height:100%;
+		}
+		table#tabelContr td:last-child{
+			border-bottom:1px dashed grey;
+		}
+		table#tabelContr tr:first-child  td:first-child{
+			border-top:1px solid black;
+		}
+		table#tabelContr tr:last-child td:last-child{
+			border-bottom:1px solid black;
+		}
