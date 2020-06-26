@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<title> Declaratie | Departamentul de Politie Sector 13 </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Site-ul oficial al departamentului de politie din sector 13">
+	<meta name="keywords" content="noutati, anunturi">
+	<meta name="author" content="Burta Mihai - Catalin">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/animatie.css">
+    <script src="/js/general.js"></script>
+    <script src="/js/formular.js"></script>
+    <script src="/js/formular_dinamic.js"></script>
+    <script src="/js/animatie.js"></script>
+</head>
+
+<body onresize="WindowResized()" onload="WordCount();" onmousemove="notAfk()" onclick="notAfk()">
+
+	<%- include('../fragmente/header')  %>
+
+	<main>
+        <!-- de adaugat noutati aici -->
+        <div class="container">
+            <div id="afk"></div>
+            <div id="dynamicform">
+                
+                <p><button onclick="MoveInfractor(); MovePolitist();">Prinde-l!</button></p> 
+                <div id ="camp">
+                  <div id ="infractor"><img src="/images/robber.png" width="100px" height="50px"></div>
+                  <div id ="politist"><img src="/images/cop.png" width="50px" height="50px"></div>
+                </div>
+                
+                
+                <p>Vrei sa dai o declaratie?</p>
+                <button onclick="GenerateDynamicForm()">Da o declaratie</button>
+                
+                
+                
+            </div>     
+        </div>
+    </main>
+    
+	<%- include('../fragmente/footer')  %>
+</body>
+</html>

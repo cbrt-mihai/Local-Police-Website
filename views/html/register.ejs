@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<title> Inregistrare | Departamentul de Politie Sector 13 </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Site-ul oficial al departamentului de politie din sector 13">
+	<meta name="keywords" content="joc, minigame, alba-neagra">
+	<meta name="author" content="Burta Mihai - Catalin">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/galerie.css">
+    <link rel="stylesheet" href="/css/galerie_800.css" type="text/css" media="screen and (max-width: 700px)" />
+	<link rel="stylesheet" href="/css/galerie_400.css" type="text/css" media="screen and (max-width: 400px)" />
+    <script src="/js/general.js"></script>
+</head>
+
+<body onresize="WindowResized()" onload="WordCount();" onmousemove="notAfk()" onclick="notAfk()">
+	
+	<%- include('../fragmente/header')  %>
+	
+	<main>
+        <div class="container">
+            <div id="afk"></div>
+            <h1> Inregistrare </h1>
+            <form action="/inreg" method="post">
+                <label for="fnume">Nume:</label>
+                <input type="text" id="fnume" name="nume"><br><br>
+                <label for="fprenume">Prenume:</label>
+                <input type="text" id="fprenume" name="prenume"><br><br>
+                <label for="fsex">Sex:</label>
+                    <input type="radio" id="fsexm" name="sex" value="masculin" checked> Masculin
+                    <input type="radio" id="fsexf" name="sex" value="feminin"> Feminin  
+                    <br><br>
+                <label for="fuser">Username:</label>
+                <input type="text" id="fuser" name="username"><br><br>
+                <label for="fpass">Parola:</label>
+                <input type="password" id="fpass" name="parola"><br><br>
+                <label for="fmail">Email:</label>
+                <input type="text" id="fmail" name="email"><br><br>
+                <input type="submit" value="Submit">
+            </form> 
+        </div>
+    </main>
+	
+    <%- include('../fragmente/footer')  %>
+</body>
+</html>

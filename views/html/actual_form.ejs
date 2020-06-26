@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<title> Persoane disparute | Departamentul de Politie Sector 13 </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Site-ul oficial al departamentului de politie din sector 13">
+	<meta name="keywords" content="noutati, anunturi">
+	<meta name="author" content="Burta Mihai - Catalin">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="/js/general.js"></script>
+    <script src="/js/actual_form.js"></script>
+</head>
+
+<body onresize="WindowResized()" onload="WordCount();" onmousemove="notAfk()" onclick="notAfk()">
+
+	<%- include('../fragmente/header')  %>
+
+	<main>
+        <!-- de adaugat noutati aici -->
+        <div class="container">
+            <div id="afk"></div>
+            <div id="cnt_formular">
+                
+                <h1> Raport persoana disparuta </h1>
+                
+                <button onclick="AddImageInput()">Adauga imagine</button>
+                <br><br>
+                
+                <form action="text.html" onsubmit="Succes()" onreset="ResetValues()" oninput="date.value='Nume: ' + nume.value + ' | Prenume: ' + prenume.value + ' | Sex: ' + sex.value + ' | Semnalmente: ' + semnalment1.value + ' ' + semnalment2.value + ' ' + semnalment3.value + ' | Ultima locatie ' + ultima_locatie.value" id="formular" method="get">
+                    <label for="nume">Nume:</label>
+                    <input type="text" id="nume" name="nume"><br><br>
+
+                    <label for="prenume">Prenume:</label>
+                    <input type="text" id="prenume" name="prenume"><br><br>  
+                    
+                    <label for="sex">Sex:</label>
+                    <input type="radio" id="sexm" name="sex" value="masculin" checked> Masculin
+                    <input type="radio" id="sexf" name="sex" value="feminin"> Feminin  
+                    <br><br>
+                    
+                    <label for="semnalmente">Semnalmente:</label><br>
+                    <select id="semnalment1" style="width: 75px; height: 25px;" name="semnalment1" form="formular">
+                        <option value="Inalt"> Inalt </option>
+                        <option value="Mediu"> Mediu </option>
+                        <option value="Scund"> Scund </option>
+                    </select><br><br>
+                    
+                    <select id="semnalment2" style="width: 75px; height: 25px;" name="semnalment2" form="formular">
+                        <option value="Blond"> Blond </option>
+                        <option value="Saten"> Saten </option>
+                        <option value="Brunet"> Brunet </option>
+                    </select><br><br>
+                    
+                    <select id="semnalment3" style="width: 75px; height: 25px;" name="semnalment3" form="formular">
+                        <option value="Robust"> Robust </option>
+                        <option value="Potrivit"> Potrivit </option>
+                        <option value="Slab"> Slab </option>
+                    </select><br><br>
+                    
+                    <label for="ultima_locatie">Unde a fost vazut/a ultima data:</label>
+                    <input type="text" id="ultima_locatie" name="ultima_locatie"><br><br>
+
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                    <br><br>
+                    <output name="date"></output>
+                </form>
+                <br>
+                
+                
+                
+                
+                <p id="raport"></p>
+            </div>     
+        </div>
+    </main>
+    
+	<%- include('../fragmente/footer')  %>
+    
+</body>
+</html>

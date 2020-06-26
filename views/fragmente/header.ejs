@@ -1,0 +1,50 @@
+<header>
+        <div class="container">
+            <table align="center">
+                <tr>
+                    <td>
+                        <% if(!locals.username) {  %>
+                        <form action="/login" method="post">
+                            <label for="fname">Username:</label>
+                            <input type="text" id="username" name="username"><br><br>
+                            <label for="lname">Parola:</label>
+                            <input type="password" id="parola" name="parola"><br><br>
+                            <input type="submit" value="Submit">
+                        </form> 
+                        <% }
+                        else { %>
+                        Utilizator logat: <%= locals.username  %>
+                        <a href="/logout">Logout</a>
+                        <% } %>
+                        <hr/>
+                    </td>
+                    <td></td>
+                    <td>
+                        <nav id="top">
+                            <button class="dropbtn" onclick="location.href='/index'" type="button">Acasa</button> |
+                            <div class="dropdown">
+                              <button class="dropbtn" onclick="location.href='/cazInc'" type="button">Cazuri Incheiate</button>
+                              <div class="dropdown-content">
+                                <a href="/cazInc#crima">Crima</a>
+                                <a href="/cazInc#furt">Furt</a>
+                                <a href="/cazInc#contraventii">Contraventii</a>
+                              </div>
+                            </div> |
+                            <div class="dropdown">
+                              <button class="dropbtn" onclick="location.href='/departament'" type="button">Departament</button>
+                              <div class="dropdown-content">
+                                <a href="/departament#capitan">Capitan</a>
+                                <a href="/departament#ofiteri">Ofiteri</a>
+                                <a href="/departament#asistenti">Asistenti</a>
+                              </div>
+                            </div> |
+                            <button class="dropbtn" onclick="location.href='/news'" type="button">Ponturi</button> |
+                            <button class="dropbtn" onclick="location.href='/actual_form'" type="button">Persoane disparute</button> |
+                            <button class="dropbtn" onclick="location.href='/register'" type="button">Inregistrare</button> |
+                            <button class="dropbtn" onclick="location.href='/capturati'" type="button">Infractori capturati</button>
+                        </nav>
+                    <td>
+                </tr>
+            </table>
+        </div>
+	</header>

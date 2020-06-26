@@ -1,0 +1,18 @@
+#camp {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+#infractor {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+#politist {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}

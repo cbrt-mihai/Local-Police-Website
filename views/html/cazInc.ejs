@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<title> Cazuri Incheiate | Departamentul de Politie Sector 13 </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Site-ul oficial al departamentului de politie din sector 13">
+	<meta name="keywords" content="cazuri, crime, furt, infractori">
+	<meta name="author" content="Burta Mihai - Catalin">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link type="text/css" href="/css/tabel_responsive.css" rel="stylesheet">
+    <link type="text/css" href="/css/tabel_responsive_850.css" rel="stylesheet" media="screen and (max-width:850px)">
+    <script src="/js/cazInc.js"></script>
+    <script src="/js/general.js"></script>
+</head>
+
+<body onresize="WindowResized()" onload="WordCount();" onmousemove="notAfk()" onclick="notAfk()">
+	
+	<%- include('../fragmente/header')  %>
+	
+	<main>
+        <!-- de adaugat aici linkuri la cazurile incheiate de pana acum-->
+        <div class="container">
+            <div id="afk"></div>
+            <button onclick="censor()">Cenzureaza!</button>
+            <button onclick="remove()">Sterge!</button>
+            <div id="crima" align="center">
+            <h1>Crima</h1>
+            <table id="tabelCrima">
+			<thead>
+				<tr>
+                    <th>id.</th>
+                    <th>Nume</th>
+                    <th>Varsta</th>
+                    <th>Fapta</th>
+                    <th>Sentina</th>
+                    <th>nr. Crime</th>
+                    <th>Locatie crime</th>
+                    <th>Adresa</th>
+                    <th>nr. Telefon</th>
+                    <th>CNP</th>
+                  </tr>
+			</thead>
+			<tbody>
+				  <tr class="row">
+                    <td>1</td>
+                    <td>Ionescu Andrei</td>
+                    <td>25</td>
+                    <td>Crima</td>
+                    <td>17</td>
+                    <td>3</td>
+                    <td>jud. Bacau</td>
+                    <td>Bacau, jud. Bacau str. Zambilelor, nr. 5</td>
+                    <td class="censor">0765234334</td>
+                    <td class="remove">5000610132456</td>
+                  </tr>
+				  <tr class="row">
+                    <td>2</td>
+                    <td>Popescu Cornel</td>
+                    <td>44</td>
+                    <td>Crima</td>
+                    <td>11</td>
+                    <td>2</td>
+                    <td>jud. Alba</td>
+                    <td>Bucuresti, str. George Enescu, nr. 14</td>
+                    <td class="censor">0765473328</td>
+                    <td class="remove">5000707846374</td>
+                  </tr>
+				  <tr class="row">
+                    <td>3</td>
+                    <td>Ion Andrei</td>
+                    <td>37</td>
+                    <td>Crima</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>jud. Ilfov</td>
+                    <td>Bucuresti, str. George Emil Palade, nr. 4</td>
+                    <td class="censor">0765526328</td>
+                    <td class="remove">5000808746374</td>
+                  </tr>
+                  <tr class="row">
+                    <td>4</td>
+                    <td>Pop Alexandru</td>
+                    <td>20</td>
+                    <td>Crima</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>jud. Ilfov</td>
+                    <td>Bucuresti, str. George Emil Palade, nr. 4</td>
+                    <td class="censor">0765526328</td>
+                    <td class="remove">5000808746374</td>
+                  </tr>
+			</tbody>
+			<tfoot> <!-- pus tfoot la finalul tabelului, ca sa mearga counterul -->
+				<tr>
+					<td colspan="10">Numar criminali:</td><!--calculat cu ajutorul counterelor -->
+				</tr>
+			</tfoot>
+		</table>
+            </div>
+            
+            <div id="furt" align="center">
+                <h1>Furt</h1>
+                <table id="tabelFurt">
+                <thead>
+                    <tr>
+                        <th>id.</th>
+                        <th>Nume</th>
+                        <th>Varsta</th>
+                        <th>Fapta</th>
+                        <th>Sentina</th>
+                        <th>nr. Furturi</th>
+                        <th>Locatie furt</th>
+                        <th>Adresa</th>
+                        <th>nr. Telefon</th>
+                        <th>CNP</th>
+                      </tr>
+                </thead>
+                <tbody>
+                    <tr class="row">
+                        <td>1</td>
+                        <td>Ionescu Andrei</td>
+                        <td>25</td>
+                        <td>Furt</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>jud. Bacau</td>
+                        <td>Bacau, jud. Bacau str. Zambilelor, nr. 5</td>
+                        <td class="censor">0765234334</td>
+                        <td class="remove">5000610132456</td>
+                      </tr>
+                    <tr class="row">
+                        <td>2</td>
+                        <td>Popescu Cornel</td>
+                        <td>44</td>
+                        <td>Furt</td>
+                        <td>11</td>
+                        <td>2</td>
+                        <td>jud. Alba</td>
+                        <td>Bucuresti, str. George Enescu, nr. 14</td>
+                        <td class="censor">0765473328</td>
+                        <td class="remove">5000707846374</td>
+                      </tr>
+                    <tr class="row">
+                        <td>3</td>
+                        <td>Ion Andrei</td>
+                        <td>37</td>
+                        <td>Furt</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>jud. Ilfov</td>
+                        <td>Bucuresti, str. George Emil Palade, nr. 4</td>
+                        <td class="censor">0765526328</td>
+                        <td class="remove">5000808746374</td>
+                      </tr>
+                </tbody>
+                <tfoot> <!-- pus tfoot la finalul tabelului, ca sa mearga counterul -->
+                    <tr>
+                        <td colspan="10">Numar hoti:</td><!--calculat cu ajutorul counterelor -->
+                    </tr>
+                </tfoot>
+            </table>
+            </div>
+            
+            <div id="contraventii" align="center">
+                <h1>Contraventii</h1>
+                <table id="tabelContr">
+                <thead>
+                    <tr>
+                        <th>id.</th>
+                        <th>Nume</th>
+                        <th>Varsta</th>
+                        <th>Fapta</th>
+                        <th>Sentina</th>
+                        <th>nr. Contraventii</th>
+                        <th>Locatie contraventie</th>
+                        <th>Adresa</th>
+                        <th>nr. Telefon</th>
+                        <th>CNP</th>
+                      </tr>
+                </thead>
+                <tbody>
+                    <tr class="row">
+                        <td>1</td>
+                        <td>Ionescu Andrei</td>
+                        <td>25</td>
+                        <td>Contraventie</td>
+                        <td>17</td>
+                        <td>3</td>
+                        <td>jud. Bacau</td>
+                        <td>Bacau, jud. Bacau str. Zambilelor, nr. 5</td>
+                        <td class="censor">0765234334</td>
+                        <td class="remove">5000610132456</td>
+                      </tr>
+                    <tr class="row">
+                        <td>2</td>
+                        <td>Popescu Cornel</td>
+                        <td>44</td>
+                        <td>Contraventie</td>
+                        <td>11</td>
+                        <td>2</td>
+                        <td>jud. Alba</td>
+                        <td>Bucuresti, str. George Enescu, nr. 14</td>
+                        <td class="censor">0765473328</td>
+                        <td class="remove">5000707846374</td>
+                      </tr>
+                    <tr class="row">
+                        <td>3</td>
+                        <td>Ion Andrei</td>
+                        <td>37</td>
+                        <td>Contraventie</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>jud. Ilfov</td>
+                        <td>Bucuresti, str. George Emil Palade, nr. 4</td>
+                        <td class="censor">0765526328</td>
+                        <td class="remove">5000808746374</td>
+                      </tr>
+                </tbody>
+                <tfoot> <!-- pus tfoot la finalul tabelului, ca sa mearga counterul -->
+                    <tr>
+                        <td colspan="10">Numar contravenienti:</td><!--calculat cu ajutorul counterelor -->
+                    </tr>
+                </tfoot>
+            </table>
+            </div>
+           
+        </div>
+    </main>
+	<%- include('../fragmente/footer')  %>
+</body>
+</html>

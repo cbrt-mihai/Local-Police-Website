@@ -1,0 +1,3 @@
+{"lastId":4,"infractori":[{"id":1,"nume":"Tache Marcel","descriere_infractiune":"A fost vazut furand din Carrefour","numar_victime":1,"liber":true,"semnalmente":["Inalt","Slab","Brunet"],"data_infractiune":"2018-10-03T16:21:53.910Z"},
+{"id":2,"nume":"Ionescu Cornel","descriere_infractiune":"A batut un alt barbat","numar_victime":1,"liber":true,"semnalmente":["Scund","Potrivit","Saten"],"data_infractiune":"2020-03-10T13:37:56.920Z"},
+{"id":3,"nume":"Alex Alexandrescu","descriere_infractiune":"A jefuit o banca","numar_victime":1,"liber":true,"semnalmente":["Scund","Slab","Blond"],"data_infractiune":"2019-05-27T13:37:56.920Z"}]}
